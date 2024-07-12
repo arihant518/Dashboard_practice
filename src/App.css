@@ -1,0 +1,12 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.MuiListItemText-primary{
+  font-size: 13px !important;
+}
+
+.MuiInput-underline:before
+{ border-bottom: none !important }
