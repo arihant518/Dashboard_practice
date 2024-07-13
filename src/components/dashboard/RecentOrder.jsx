@@ -85,13 +85,12 @@ const orders = [
     status: 'Complete',
     img: mobilePhotoBlack,
   },
-  // Add more orders to have 8-10 items
 ];
 
 export default function RecentOrder() {
   return (
     <div>
-      <Grid sx={{ padding: '20px', borderRadius: '12px', backgroundColor: '#5E63661A' }}>
+      <Grid sx={{ padding: '20px', borderRadius: '12px', backgroundColor: '#5E63661A', width:'100%' }}>
         <Typography sx={{ fontSize: '16px' }}>Recent Orders</Typography>
         {orders.map((order) => (
           <Box

@@ -35,7 +35,7 @@ export default function Marketing() {
       type: "pie",
     },
     title: {
-      text: "",
+      text: "Marketing",
       align: "left",
     },
     tooltip: {
@@ -100,24 +100,6 @@ export default function Marketing() {
   return (
     <Grid container spacing={2}>
       <Grid item xs={6} md={6} sx={commonStyles}>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Typography sx={{ fontSize: "20px", fontWeight: "600" }}>
-            Marketing
-          </Typography>
-          <FormControl variant="standard" sx={{ minWidth: 100 }}>
-            <Select
-              labelId="demo-simple-select-standard-label"
-              id="demo-simple-select-standard"
-              value={time}
-              onChange={handleChange}
-              label="This week"
-            >
-              <MenuItem value="This week">This week</MenuItem>
-              <MenuItem value="This month">This month</MenuItem>
-              <MenuItem value="This year">This year</MenuItem>
-            </Select>
-          </FormControl>
-        </Box>
         <HighchartsReact highcharts={Highcharts} options={options} />
       </Grid>
       <Grid item xs={12} md={5.5}>
